@@ -2,32 +2,32 @@
 
 
 
-## 📝 Description du Projet
+##  Description du Projet
 Ce projet consiste en la conception et le développement d'une application web Full-Stack dédiée à l'automatisation et à la centralisation de la gestion des stages au sein d'un établissement d'enseignement supérieur (INPT). 
 
 L'application remplace les processus traditionnels manuels (échanges d'e-mails disparates, documents papier) par une plateforme unifiée et sécurisée où interagissent trois profils principaux : les **Étudiants**, les **Entreprises** et l'**Administration**.
 
 ---
 
-## 🚀 Fonctionnalités Clés par Profil
+##  Fonctionnalités Clés par Profil
 
-### 👨‍🎓 Espace Étudiant
+###  Espace Étudiant
 * **Exploration des offres :** Consultation en temps réel des opportunités de stage (1A, 2A, PFE) publiées par les entreprises partenaires.
 * **Formulaire de postulation :** Envoi instantané des candidatures avec liens vers le CV (Google Drive/Dropbox) et lettre de motivation.
 * **Phase finale :** Dépôt asynchrone du rapport de stage au format PDF pour évaluation.
 
-### 🏢 Espace Entreprise
+###  Espace Entreprise
 * **Gestion des offres :** Publication et suppression dynamique des opportunités de stage avec ciblage par filière (ex: ASEDS).
 * **Suivi du recrutement :** Interface de traitement des candidatures permettant d'accepter ou de refuser un profil en un clic.
 
-### 👑 Espace Administration (Pilotage & Évaluation)
+###  Espace Administration (Pilotage & Évaluation)
 * **Tableau de bord :** Statistiques globales de la promotion en temps réel (nombre d'étudiants inscrits, stages trouvés, conventions en attente).
 * **Suivi académique :** Gestion du parcours des étudiants et attribution des notes de soutenance.
 * **Gestion contractuelle :** Validation et suivi des signatures des conventions de stage.
 
 ---
 
-## 📐 Architecture Technique & Base de Données
+##  Architecture Technique & Base de Données
 
 L'application repose sur un modèle architectural **Client-Serveur** strict, assurant une séparation nette entre l'interface utilisateur et la logique métier.
 
@@ -45,7 +45,7 @@ La persistance est assurée par un schéma relationnel normalisé comprenant 4 t
 
 ---
 
-## 🔒 Sécurité et Robustesse Technique
+##  Sécurité et Robustesse Technique
 
 * **Protection contre les Injections SQL :** Utilisation systématique de requêtes préparées (requêtes paramétrées avec le caractère `?` via le pilote MySQL de Node.js).
 * **Intégrité Référentielle :** Implémentation de la clause `ON DELETE CASCADE`. La suppression d'une offre par une entreprise nettoie automatiquement toutes les candidatures associées dans la table `applications`.
@@ -53,7 +53,7 @@ La persistance est assurée par un schéma relationnel normalisé comprenant 4 t
 
 ---
 
-## 📂 Structure du Dépôt
+##  Structure du Dépôt
 
 ```text
 ├── database/
